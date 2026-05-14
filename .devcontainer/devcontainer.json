@@ -1,0 +1,16 @@
+{
+  "name": "Cline Backend",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "features": {
+    "ghcr.io/devcontainers/features/nvidia-cuda:1": {},
+    "ghcr.io/devcontainers/features/ollama:1": {}
+  },
+  "postCreateCommand": "ollama pull qwen2.5-coder:7b",
+  "forwardPorts": [11434],
+  "portsAttributes": {
+    "11434": {
+      "label": "Ollama API",
+      "onAutoForward": "notify"
+    }
+  }
+}
