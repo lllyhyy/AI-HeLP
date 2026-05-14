@@ -9,7 +9,7 @@ ollama serve &
 sleep 5
 
 echo "=== 下载模型（约4.5GB，需要5-10分钟）==="
-ollama pull qwen2.5-coder:7b-q4_K_M
+ollama pull qwen2.5-coder:7b
 
 echo "=== 安装 Python 依赖 ==="
 pip install fastapi uvicorn httpx
